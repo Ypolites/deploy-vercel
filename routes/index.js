@@ -6,9 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/year', (req, res) {
+// GET year
+router.get('/year', function(req, res) {
   const newDate = Date.now();
-  res.json({ year: newDate })
+  res.json({ year: newDate });
 });
 
 module.exports = router;
