@@ -6,6 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+
 // GET year
 router.get('/year', function(req, res) {
   const newDate = Date.now();
